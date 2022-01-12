@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeContext" prefHeight="1000.0" prefWidth="1900.0" style="-fx-background-color: #d2dae29F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeController">
+   <children>
+      <Separator layoutX="31.0" layoutY="105.0" orientation="VERTICAL" prefHeight="890.0" prefWidth="7.0" style="-fx-background-color: black;" />
+      <Separator layoutX="31.0" layoutY="989.0" prefHeight="6.0" prefWidth="1834.0" style="-fx-background-color: black;" />
+      <Separator layoutX="1857.0" layoutY="105.0" orientation="VERTICAL" prefHeight="890.0" prefWidth="7.0" style="-fx-background-color: black;" />
+      <Separator layoutX="28.0" layoutY="102.0" prefHeight="6.0" prefWidth="1834.0" style="-fx-background-color: black;" />
+      <Label layoutX="35.0" layoutY="35.0" text="Income Details">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1675.0" layoutY="23.0" onAction="#backOnAction" prefHeight="44.0" prefWidth="201.0" style="-fx-background-color: #58B19F;" text="Back">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

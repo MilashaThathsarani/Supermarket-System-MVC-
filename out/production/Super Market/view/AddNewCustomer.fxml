@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="addNewCustomerContext" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewCustomerController">
+   <children>
+      <Separator layoutX="22.0" layoutY="84.0" orientation="VERTICAL" prefHeight="602.0" prefWidth="3.0" style="-fx-background-color: black;" />
+      <Separator layoutX="972.0" layoutY="84.0" orientation="VERTICAL" prefHeight="602.0" prefWidth="3.0" style="-fx-background-color: black;" />
+      <Separator layoutX="24.0" layoutY="79.0" prefHeight="7.0" prefWidth="953.0" style="-fx-background-color: black;" />
+      <Separator layoutX="24.0" layoutY="683.0" prefHeight="7.0" prefWidth="953.0" style="-fx-background-color: black;" />
+      <JFXTextField fx:id="txtCustomerTittle" focusColor="#58b19f" labelFloat="true" layoutX="572.0" layoutY="136.0" prefHeight="31.0" prefWidth="282.0" promptText="Customer Tittle">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerName" focusColor="#58b19f" labelFloat="true" layoutX="75.0" layoutY="230.0" prefHeight="31.0" prefWidth="375.0" promptText="Customer Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="#58b19f" labelFloat="true" layoutX="76.0" layoutY="319.0" prefHeight="31.0" prefWidth="604.0" promptText="Customer Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerCity" focusColor="#58b19f" labelFloat="true" layoutX="75.0" layoutY="401.0" prefHeight="31.0" prefWidth="303.0" promptText="City">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtProvince" focusColor="#58b19f" labelFloat="true" layoutX="572.0" layoutY="401.0" prefHeight="31.0" prefWidth="303.0" promptText="Province">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPostalCode" focusColor="#58b19f" labelFloat="true" layoutX="75.0" layoutY="487.0" prefHeight="31.0" prefWidth="303.0" promptText="Postal Code">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="587.0" onAction="#addOnAction" prefHeight="45.0" prefWidth="256.0" style="-fx-background-color: #58B19F;" text="Add ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtCustomerId" focusColor="#58b19f" labelFloat="true" layoutX="75.0" layoutY="136.0" onAction="#selectCustomer" prefHeight="31.0" prefWidth="303.0" promptText="Customer Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="378.0" layoutY="587.0" onAction="#updateOnAction" prefHeight="45.0" prefWidth="256.0" style="-fx-background-color: #58B19F;" text="Update">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="680.0" layoutY="587.0" onAction="#deleteOnAction" prefHeight="45.0" prefWidth="256.0" style="-fx-background-color: red;" text="Delete">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="24.0" layoutY="14.0" text="Customer Details">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="801.0" layoutY="14.0" onAction="#backOnAction" prefHeight="36.0" prefWidth="185.0" style="-fx-background-color: #58B19F;" text="Back">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

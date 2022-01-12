@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logInContext" prefHeight="850.0" prefWidth="1300.0" style="-fx-background-color: #d2dae29F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInController">
+   <children>
+      <ImageView fitHeight="218.0" fitWidth="292.0" layoutX="46.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/supermarket-logo-template-theme_23-2148452347.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="323.0" layoutY="46.0" prefHeight="105.0" prefWidth="759.0" text="Eco Market - Matara..." textFill="#20612e">
+         <font>
+            <Font name="System Bold Italic" size="72.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="745.0" layoutY="187.0" prefHeight="611.0" prefWidth="500.0" style="-fx-background-color: #58B19F;">
+         <children>
+            <TextField fx:id="txtUserName" layoutX="51.0" layoutY="227.0" onAction="#moveToPassword" prefHeight="45.0" prefWidth="399.0" promptText="User Name" />
+            <TextField fx:id="txtPassword" layoutX="51.0" layoutY="306.0" prefHeight="45.0" prefWidth="399.0" promptText="Password" />
+            <Button layoutX="113.0" layoutY="422.0" mnemonicParsing="false" onAction="#openAdministratorForm" prefHeight="45.0" prefWidth="275.0" text="Administrator">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="113.0" layoutY="503.0" mnemonicParsing="false" onAction="#openCashierForm" prefHeight="45.0" prefWidth="275.0" text="Cashier">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="120.0" fitWidth="150.0" layoutX="190.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/IconBros.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="14.0" layoutY="17.0" prefHeight="7.0" prefWidth="1275.0" style="-fx-background-color: black;" />
+      <Separator layoutX="13.0" layoutY="829.0" prefHeight="7.0" prefWidth="1275.0" style="-fx-background-color: black;" />
+      <Label layoutX="39.0" layoutY="353.0" text="Eco Market(Ceylon) PLC">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="425.0" text="City Devision">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="492.0" text="Matara">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="664.0" text="ecomarket@gmail.com">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="716.0" text="0417900929">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="323.0" layoutY="155.0" prefHeight="30.0" prefWidth="199.0" text="FRESH &amp; HEALTHY..." textFill="#508d46">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="46.0" layoutY="45.0" prefHeight="0.0" prefWidth="218.0" style="-fx-background-color: #58B19F;" />
+      <Separator layoutX="46.0" layoutY="261.0" prefHeight="0.0" prefWidth="218.0" style="-fx-background-color: #58B19F;" />
+      <Separator layoutX="261.0" layoutY="46.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="0.0" style="-fx-background-color: #58B19F;" />
+      <Separator layoutX="43.0" layoutY="46.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="0.0" style="-fx-background-color: #58B19F;" />
+   </children>
+</AnchorPane>
