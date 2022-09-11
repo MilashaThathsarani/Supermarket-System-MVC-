@@ -13,7 +13,7 @@ public class DbConnection {
         connection = DriverManager.getConnection(
                 "jdbc:mysql://127.0.0.1:3306/SuperMarket",
                 "root",
-                "1234");
+                "Milasha99@");
     }
 
     public static DbConnection getInstance() throws ClassNotFoundException, SQLException {
